@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مسار - البرمجة والتصميم الإبداعي</title>
+    <meta name="description" content="خدمات البرمجة وتصميم البوسترات وملفات الأعمال والخدمات الإلكترونية المتكاملة.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;400;600;700;900&family=Montserrat:wght@400;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Interactive Background Canvas -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Header / Social Bar -->
+    <header class="container social-header">
+        <div class="logo">
+            <img src="images/logo.png" alt="مسار">
+            <span>MASSAR</span>
+        </div>
+        <div class="social-links">
+            <a href="https://wa.me/966581914651" class="social-btn whatsapp pulse-glow" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+                <span>واتساب</span>
+            </a>
+            <a href="https://www.tiktok.com/@massartec?_r=1&_t=ZS-95KHxyxdYM0" class="social-btn tiktok" target="_blank">
+                <i class="fab fa-tiktok"></i>
+                <span>تيك توك</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero container">
+        <div class="hero-content">
+            <h1 class="hero-title reveal">نحوّل الأفكار إلى <span>واقع </span></h1>
+            <p class="hero-desc reveal">تقديم خدمات إلكترونية شاملة للمشاريع والأفرا</p>
+            <div class="hero-btns reveal">
+                <a href="#work" class="btn-main">الاعمال</a>
+                <a href="#services" class="btn-main"
+                    style="background: transparent; border: 2px solid var(--accent-blue); margin-right: 15px;">خدماتنا</a>
+            </div>
+        </div>
+        <div class="hero-blob"></div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services container" id="services">
+        <div class="section-head reveal">
+            <h2>خدماتنا المتكاملة</h2>
+            <p>نعمل جاهدين لتقديم أفضل الحلول الرقمية التي تلبي احتياجاتك</p>
+        </div>
+
+        <div class="service-grid">
+            <div class="service-card glass reveal">
+                <i class="fas fa-code"></i>
+                <h3>برمجة الواجهات</h3>
+                <p>تصميم واجهات احترافية (Frontend) مع استضافة مجانية على GitHub. ستمتلك كود الموقع بالكامل مع إمكانية
+                    التطوير المستقبلي.</p>
+            </div>
+
+            <div class="service-card glass reveal">
+                <i class="fas fa-image"></i>
+                <h3>تصميم البوسترات</h3>
+                <p>تصاميم إبداعية تشمل الدعوات، الحملات التسويقية، والتصاميم العامة المبتكرة التي يتم تنفيذها تماماً حسب
+                    طلبك.</p>
+            </div>
+
+            <div class="service-card glass reveal">
+                <i class="fas fa-file-pdf"></i>
+                <h3>ملفات الأعمال</h3>
+                <p>إنشاء وتصميم ملفات أعمال (Portfolios) كاملة باحترافية عالية تُبرز مهاراتك وخبراتك بدقة وحسب الطلب.
+                </p>
+            </div>
+
+            <div class="service-card glass reveal">
+                <i class="fas fa-laptop-code"></i>
+                <h3>خدمات إلكترونية أخرى</h3>
+                <p>تقديم الخدمات الحكومية المتنوعة وحلول تقنية أخرى لإنجاز معاملاتك الإلكترونية بكل دقة وسهولة.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Showcase -->
+    <section class="portfolio container" id="work">
+        <div class="section-head reveal">
+            <h2>نماذج من أعمالنا</h2>
+            <p>مجموعة من المشاريع المتنوعة في البرمجة، التصميم، والخدمات التقنية المختلفة</p>
+        </div>
+
+        <div class="work-grid">
+            <!-- Design Sample -->
+            <div class="work-item glass reveal">
+                <div class="work-icon"><i class="fas fa-palette"></i></div>
+                <div class="work-content">
+                    <span class="work-tag">نماذج التصميم</span>
+                    <h4>تصاميم بوسترات إبداعية</h4>
+                    <a href="https://drive.google.com/drive/folders/14Z0qBj8FDturYm20ttThNRt40aqE51sr" target="_blank" class="btn-main"
+                        style="width: 100%; text-align: center; padding: 0.8rem;">فتح المجلد</a>
+                </div>
+            </div>
+
+            <!-- Programming Sample -->
+            <div class="work-item glass reveal">
+                <div class="work-icon"><i class="fas fa-code"></i></div>
+                <div class="work-content">
+                    <span class="work-tag">نماذج البرمجة</span>
+                    <h4>واجهات ومواقع ويب</h4>
+                    <a href="https://drive.google.com/drive/folders/10oRR_Ecly7np48u7OqpWtGuuFJfKXNz6" target="_blank" class="btn-main"
+                        style="width: 100%; text-align: center; padding: 0.8rem;">فتح المجلد</a>
+                </div>
+            </div>
+
+            <!-- Portfolio Sample -->
+            <div class="work-item glass reveal">
+                <div class="work-icon"><i class="fas fa-briefcase"></i></div>
+                <div class="work-content">
+                    <span class="work-tag">ملفات الأعمال</span>
+                    <h4>بورتفوليو احترافي</h4>
+                    <a href="https://drive.google.com/drive/folders/1CgAg1n5XAtLQaocV-oV73oHWuPqIdUnl" target="_blank" class="btn-main"
+                        style="width: 100%; text-align: center; padding: 0.8rem;">فتح المجلد</a>
+                </div>
+            </div>
+
+            <!-- Other Services Sample -->
+            <div class="work-item glass reveal">
+                <div class="work-icon"><i class="fas fa-laptop-code"></i></div>
+                <div class="work-content">
+                    <span class="work-tag">خدمات عامة</span>
+                    <h4>نماذج خدمات إلكترونية</h4>
+                    <a href="https://drive.google.com/drive/folders/1nvhwxw-bjBfzgPnSO9yEHF1Hx4RMXFXt" target="_blank" class="btn-main"
+                        style="width: 100%; text-align: center; padding: 0.8rem;">فتح المجلد</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / CTA -->
+    <footer class="container footer">
+        <div class="cta-box glass reveal">
+            <h2>جاهز للانطلاق؟</h2>
+            <p>تواصل معنا الان</p>
+            <a href="https://wa.me/966581914651" class="btn-main">تواصل عبر واتساب</a>
+        </div>
+
+        <div class="social-links" style="justify-content: center; margin-bottom: 2rem;">
+            <a href="https://wa.me/966581914651" class="social-btn whatsapp pulse-glow" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+                <span>واتساب</span>
+            </a>
+            <a href="https://www.tiktok.com/@massartec?_r=1&_t=ZS-95KHxyxdYM0" class="social-btn tiktok" target="_blank">
+                <i class="fab fa-tiktok"></i>
+                <span>تيك توك</span>
+            </a>
+        </div>
+
+        <p class="copyright">© 2026 MASSAR. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
