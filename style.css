@@ -118,7 +118,9 @@ a {
     font-weight: 800;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
+    flex-wrap: nowrap;
+    white-space: nowrap;
 }
 
 .logo img {
@@ -444,21 +446,34 @@ a {
 }
 
 @media (max-width: 768px) {
-    .container { padding: 0 1.2rem; }
-    .hero-title { font-size: 2.8rem; }
-    .hero { text-align: center; justify-content: center; height: auto; padding: 5rem 0; }
-    .hero-desc { margin: 0 auto; font-size: 1.1rem; }
-    .section-head h2 { font-size: 2.2rem; }
-    .social-header { flex-direction: column; gap: 1.5rem; text-align: center; }
-    .social-links { width: 100%; justify-content: center; flex-wrap: wrap; }
-    .cta-box { padding: 3rem 1.2rem; }
-    .cta-box h2 { font-size: 2.2rem; }
+    .container { padding: 0 1.5rem; width: 100% !important; overflow-x: hidden; }
+    .hero-title { font-size: 2.8rem; line-height: 1.2; word-wrap: break-word; }
+    .hero { text-align: center; justify-content: center; height: auto; min-height: 85vh; padding: 7rem 0 3rem; }
+    .hero-desc { margin: 0 auto 2.5rem; font-size: 1.1rem; max-width: 100%; line-height: 1.7; }
+    
+    .logo { justify-content: center; width: 100%; margin: 0 auto 1.5rem; }
+    .logo img { height: 45px; width: auto; object-fit: contain; }
+    
+    .section-head { margin-bottom: 4rem; padding: 0 1rem; }
+    .section-head h2 { font-size: 2.1rem; margin-bottom: 1.2rem; }
+    
+    .services { padding: 7rem 0; margin-top: 2rem; }
+    .portfolio { padding: 7rem 0; margin-top: 2rem; }
+    
+    .social-header { flex-direction: column; gap: 2.5rem; text-align: center; padding: 4rem 0 2rem; }
+    .social-links { width: 100%; justify-content: center; flex-wrap: wrap; gap: 0.8rem; }
+    .social-btn { min-width: 120px; } /* Ensure buttons are clickable and wide on mobile */
+    
+    .cta-box { padding: 4.5rem 1.5rem; margin: 4rem 0; }
+    .cta-box h2 { font-size: 2.3rem; }
 }
 
-@media (max-width: 480px) {
-    .hero-title { font-size: 2.2rem; }
-    .social-btn { padding: 0.5rem 1rem; font-size: 0.9rem; }
-    .work-icon { height: 150px; font-size: 3rem; }
+@media (max-width: 380px) {
+    .hero-title { font-size: 2.1rem; }
+    .logo { font-size: 1.5rem; }
+    .logo img { height: 35px; }
+    .social-btn { padding: 0.5rem 0.8rem; font-size: 0.85rem; min-width: 100px; }
+    .work-icon { height: 140px; font-size: 2.8rem; }
 }
 
 /* -- Interactive Background Canvas -- */
